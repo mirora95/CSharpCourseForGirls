@@ -1,41 +1,47 @@
-# C# Programming Course for Beginners to Advanced (Girls Edition)
-This repository contains a comprehensive C# programming course tailored specifically for girls who are interested in learning the language. The course is designed to take you from a beginner level to an advanced level in C# programming.
+# C# Programming Course (Girls Edition)
+C# lessons and practice projects for girls learning programming. The lesson notes are written in Russian.
 
 ## Course Overview
-The course is divided into several modules, each covering different aspects of C# programming. Here's an overview of what you will learn:
+Start with the introduction, then follow the available lessons in order:
 
-### Module 1: Introduction to C# Programming
-- Setting up the development environment
-- Basic syntax and data types
-- Variables, operators, and expressions
-- Control flow statements (if-else, loops)
-- Arrays and collections
-
-### Module 2: Object-Oriented Programming (OOP) in C#
-- Understanding classes and objects
-- Encapsulation, inheritance, and polymorphism
-- Working with methods and properties
-- Exception handling
-- File input/output
-
-### Module 3: Advanced C# Concepts
-- Generics and collections
-- Delegates and events
-- LINQ (Language-Integrated Query)
-- Multithreading and asynchronous programming
-- Networking and web development
-
-### Module 4: Graphical User Interfaces (GUI) with C#
-- Introduction to Windows Forms and WPF
-- Designing user-friendly interfaces
-- Handling user input and events
-- Creating interactive desktop applications
+1. [Introduction and development environment](lessons/lesson1.md)
+2. [Variables, types, operators, and expressions](lessons/lesson2.1.md)
+3. [Conditions and switch expressions](lessons/lesson2.2.md)
+4. [Git and GitHub](lessons/lesson3.md)
+5. [Loops](lessons/lesson4.1-Loops.md)
+6. [Arrays](lessons/lesson4.2-Arrays.md)
+7. [Methods and scope](lessons/lesson5.md)
+8. [Exception handling](lessons/lesson6.md)
+9. [Classes and objects](lessons/lesson7-Class.md)
+10. [Windows Forms](lessons/lesson8-WF.md)
   
 ## Getting Started
-To get started with the course, follow these steps:
-1. Clone the repository: `git clone <repository-url>`
-2. Install the required software and dependencies (detailed instructions provided in the individual module folders)
-3. Follow the course modules in sequential order, starting from Module 1
+You need Git and the .NET SDK to run the console examples. The checked-in projects target `net7.0`, so running them normally also requires the .NET 7 runtime. .NET 7 is [out of support](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core); these are legacy learning examples, and new projects should use a supported .NET release.
+
+Clone the repository and enter its directory:
+
+```sh
+git clone https://github.com/mirora95/CSharpCourseForGirls.git
+cd CSharpCourseForGirls
+```
+
+Run the first console example from the repository root:
+
+```sh
+dotnet run --project projects/lesson1/lesson1/lesson1.csproj
+```
+
+It asks `Hello, Where are you from?` and echoes the text you enter.
+
+Run the second example:
+
+```sh
+dotnet run --project projects/lesson1/lesson2/lesson2.csproj
+```
+
+It prints `Hello, World!` followed by `Clone from GitHub`.
+
+For Visual Studio, open [projects/lesson1/lesson1.sln](projects/lesson1/lesson1.sln), which contains both console projects. The Windows Forms lesson requires Windows and Visual Studio with the .NET desktop development workload.
    
 ## Contributions
 Contributions to this course are highly appreciated. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on GitHub.
